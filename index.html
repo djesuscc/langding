@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Landing</title>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="./img/landing.jpg" alt="">
+    <nav id="nav-bar">
+      <li class="nav-link">
+        <a href="javascript: scrollTo('#header');">Home</a>
+      </li>
+      <li class="nav-link">
+        <a href="javascript: scrollTo('#about');">About</a>
+      </li>
+      <li class="nav-link">
+        <a href="javascript: scrollTo('#services');">Services</a>
+      </li>
+      <li class="nav-link">
+        <a href="javascript: scrollTo('#contact');">Contact</a>
+      </li>
+    </nav>
+  </header>
+  <section id="about" class="section">
+    <div>
+      <h1>About Us</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet quidem quaerat possimus officia autem pariatur quae exercitationem, omnis sed suscipit perferendis cumque, eaque eveniet expedita aspernatur maiores nisi eos voluptas.</p>
+      <button class="btn">Learn More</button>
+    </div>
+    <div class="wrap-img">
+      <img src="img/us.png" alt="">
+    </div>
+  </section>
+  <section id="services" class="section">
+    <div class="content-title"><h2>Services We Provide</h2></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nihil doloremque repellendus omnis fugiat repudiandae.</p>
+    <div id="wrap-services">
+      <div class="service">
+        <i class="fas fa-pencil-ruler"></i>
+        <div class="ctn-info">
+          <h3>UX/UI Design</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius eveniet placeat voluptas voluptates distinctio eaque praesentium exercitationem voluptate dicta.</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fas fa-laptop-code"></i>
+        <div class="ctn-info">
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius eveniet placeat voluptas voluptates distinctio eaque praesentium exercitationem voluptate dicta.</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fas fa-mobile-alt"></i>
+        <div class="ctn-info">
+          <h3>App Development</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius eveniet placeat voluptas voluptates distinctio eaque praesentium exercitationem voluptate dicta.</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fab fa-searchengin"></i>
+        <div class="ctn-info">
+          <h3>Search Engine Optimization</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius eveniet placeat voluptas voluptates distinctio eaque praesentium exercitationem voluptate dicta.</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fas fa-globe-europe"></i>
+        <div class="ctn-info">
+          <h3>Online Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius eveniet placeat voluptas voluptates distinctio eaque praesentium exercitationem voluptate dicta.</p>
+        </div>
+      </div>
+      <div class="service">
+        <i class="fas fa-lightbulb"></i>
+        <div class="ctn-info">
+          <h3>Digital Marketing</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eius eveniet placeat voluptas voluptates distinctio eaque praesentium exercitationem voluptate dicta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section">
+    <div class="content-title"><h2>Sign up for our newsletter to stay up to date with tech news!</h2></div>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+      <input type="email" name="email" id="email" class="input" placeholder="Your email address" autocomplete="off" required>
+      <button type="submit" class="btn">
+        Subscribe Now
+      </button>
+    </form>
+  </section>
+  <script>
+    function scrollTo(target) {
+      document.querySelector(target).scrollIntoView({behavior: 'smooth'});
+    }
+    window.onscroll = () => {
+      console.log('scroll', document.body.scrollTop, document.documentElement.scrollTop)
+      const position = document.getElementById('about').scrollTop
+      console.log(position)
+      if (window.scrollY >= position) {
+        let element = document.getElementById('nav-bar')
+        element.classList.add("header-scroll")
+      } else {
+        let element = document.getElementById('nav-bar')
+        element.classList.remove('header-scroll')
+      }
+    }
+  </script>
+</body>
+</html>

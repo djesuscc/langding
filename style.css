@@ -1,0 +1,177 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  height: 100%;
+}
+
+#services,
+#home{
+  min-height: 100%;
+}
+
+#header-img {
+  height: 100vh;
+  width: 100%;
+}
+
+.btn {
+  color: #fff;
+  border-radius: 4px;
+  padding: 12px 15px;
+  text-transform: capitalize;
+  background-color: #7353BA;
+  border: 0px;
+  cursor: pointer;
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+.input {
+  padding: 12px;
+  border: none;
+  border: 1px solid #7353BA;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.header-scroll {
+  background-color: black;
+}
+
+#nav-bar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#nav-bar .nav-link {
+  list-style: none;
+  padding: 20px;
+}
+
+#nav-bar .nav-link a {
+  text-decoration: none;
+  color: #FFF !important;
+  display: block;
+}
+
+.section {
+  border-top: 10px solid #0F1020;
+  padding: 0px 100px;
+}
+
+#about{
+  display: flex;
+  align-items: center;
+}
+#about > div {
+  width: 50%;
+}
+#about > div h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+#about .wrap-img {
+  text-align: center;
+}
+
+#about > div p {
+  font-size: 20px;
+  max-width: 60%;
+}
+
+/*Services*/
+#services h2, 
+#services p {
+  text-align: center;
+}
+.content-title {
+  display: flex;
+  justify-content: center;
+}
+.section h2 {
+  color: #7353BA;
+  font-size: 52px;
+  font-weight: bold;
+  margin-top: 1em;
+  width: 60%;
+  text-align: center;
+}
+
+#services > p {
+  font-size: 18px;
+}
+
+#wrap-services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#wrap-services .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid; */
+  width: 33.3333%;
+  padding: 40px 60px;
+}
+
+#wrap-services .service i {
+  font-size: 62px;
+  padding: 10px 0px 30px;
+  color: #ACACDE;
+}
+
+#wrap-services .service .ctn-info {
+  text-align: center;
+}
+
+#wrap-services .service .ctn-info h3 {
+  margin-bottom: 10px;
+}
+
+#wrap-services .service .ctn-info p {
+  line-height: 20px;
+  color: #6f6f6f;
+}
+
+
+#contact {
+  padding-bottom: 3em;
+}
+
+#contact form {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  #about .wrap-img img{
+    width: 100%;
+  }
+  #about > div h1 {
+    font-size: 40px;
+  }
+  #about > div p {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .section h2 {
+    font-size: 42px;
+    width: 70%
+  }
+  #wrap-services .service {
+    padding: 30px 10px;
+  }
+}
