@@ -85,12 +85,18 @@
   </section>
   <section id="contact" class="section">
     <div class="content-title"><h2>Sign up for our newsletter to stay up to date with tech news!</h2></div>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-      <input type="email" name="email" id="email" class="input" placeholder="Your email address" autocomplete="off" required>
-      <button type="submit" class="btn">
-        Subscribe Now
-      </button>
-    </form>
+    <div class="content-section">
+      <video id="video" height="300px" controls>
+        <source src="./media/video_preview_h264.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+        <input type="email" name="email" id="email" class="input" placeholder="Your email address" autocomplete="off" required>
+        <button type="submit" class="btn">
+          Subscribe Now
+        </button>
+      </form>
+    </div>
   </section>
   <script>
     function scrollTo(target) {
@@ -103,7 +109,7 @@
       if (window.scrollY >= position) {
         let element = document.getElementById('nav-bar')
         element.classList.add("header-scroll")
-      } else {
+      } else {  
         let element = document.getElementById('nav-bar')
         element.classList.remove('header-scroll')
       }

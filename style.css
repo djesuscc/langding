@@ -148,9 +148,21 @@ body{
 
 #contact {
   padding-bottom: 3em;
+  
+}
+#contact .content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #contact form {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+#contact .content-section #video {
   text-align: center;
 }
 
@@ -173,5 +185,64 @@ body{
   }
   #wrap-services .service {
     padding: 30px 10px;
+  }
+
+  #contact .content-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 0px 30px;
+  }
+  .section h2 {
+    width: 90%;
+  }
+  #wrap-services .service {
+    padding: 15px 10px;
+  }
+  #wrap-services .service .ctn-info p {
+    font-size: 14.5px;
+  }
+  #about {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #about > div p {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #nav-bar{
+    justify-content: center;
+  }
+
+  #header-img{
+    height: auto;
+  }
+  #about {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+  #about > div {
+    width: 100%;
+  }
+
+  #contact .content-section #video {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #wrap-services{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  #wrap-services .service {
+    width: 100%;
   }
 }
